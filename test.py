@@ -1,16 +1,7 @@
-from src.etl.normaliser import normalize_ticker, normalize_year
+import pandas as pd
 
-print(normalize_ticker(" abb "))
-# ABB
+companies = pd.read_excel("data/raw/companies.xlsx", header=1)
 
-print(normalize_year("Dec 2012"))
-# 2012-12
+print(companies["id"].tail(20))
 
-print(normalize_year("Mar 2014"))
-# 2014-03
-
-print(normalize_year("Mar-13"))
-# 2013-03
-
-print(normalize_year("2024"))
-# 2024
+print(companies.shape)
