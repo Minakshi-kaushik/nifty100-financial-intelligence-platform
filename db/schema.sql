@@ -4,32 +4,26 @@ PRAGMA foreign_keys = OFF;
 -- COMPANIES
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS companies (
-    id INTEGER PRIMARY KEY,
-    company_id TEXT UNIQUE,
+CREATE TABLE companies (
+    id TEXT PRIMARY KEY,
+    company_logo TEXT,
     company_name TEXT,
     chart_link TEXT,
-    about_company TEXT
-);
-
--- =====================================================
--- SECTORS
--- =====================================================
-
-CREATE TABLE IF NOT EXISTS sectors (
-    id INTEGER PRIMARY KEY,
-    company_id TEXT,
-    broad_sector TEXT,
-    sub_sector TEXT,
-    index_weight REAL,
-    market_cap_category TEXT
+    about_company TEXT,
+    website TEXT,
+    nse_profile TEXT,
+    bse_profile TEXT,
+    face_value REAL,
+    book_value REAL,
+    roce_percentage REAL,
+    roe_percentage REAL
 );
 
 -- =====================================================
 -- ANALYSIS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS analysis (
+CREATE TABLE analysis (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     compounded_sales_growth TEXT,
@@ -42,33 +36,30 @@ CREATE TABLE IF NOT EXISTS analysis (
 -- BALANCE SHEET
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS balancesheet (
+CREATE TABLE balancesheet (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year TEXT,
-
     equity_capital REAL,
     reserves REAL,
-    borrowing REAL,
+    borrowings REAL,
     other_liabilities REAL,
     total_liabilities REAL,
-
     fixed_assets REAL,
     cwip REAL,
-    investment REAL,
-    other_assets REAL,
+    investments REAL,
+    other_asset REAL,
     total_assets REAL
 );
 
 -- =====================================================
--- CASH FLOW
+-- CASHFLOW
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS cashflow (
+CREATE TABLE cashflow (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year TEXT,
-
     operating_activity REAL,
     investing_activity REAL,
     financing_activity REAL,
@@ -79,7 +70,7 @@ CREATE TABLE IF NOT EXISTS cashflow (
 -- DOCUMENTS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS documents (
+CREATE TABLE documents (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year INTEGER,
@@ -90,40 +81,40 @@ CREATE TABLE IF NOT EXISTS documents (
 -- FINANCIAL RATIOS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS financial_ratios (
+CREATE TABLE financial_ratios (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year TEXT,
 
-    net_profit REAL,
-    operating_margin REAL,
-    return_on_equity REAL,
+    net_profit_margin_pct REAL,
+    operating_profit_margin_pct REAL,
+    return_on_equity_pct REAL,
     debt_to_equity REAL,
     interest_coverage REAL,
     asset_turnover REAL,
 
-    free_cash_flow REAL,
-    capex REAL,
+    free_cash_flow_cr REAL,
+    capex_cr REAL,
 
     earnings_per_share REAL,
-    book_value REAL,
-    dividend_yield REAL,
+    book_value_per_share REAL,
+    dividend_payout_ratio_pct REAL,
 
-    total_debt REAL,
-    cash_from_operations REAL
+    total_debt_cr REAL,
+    cash_from_operations_cr REAL
 );
 
 -- =====================================================
 -- MARKET CAP
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS market_cap (
+CREATE TABLE market_cap (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year INTEGER,
 
-    market_cap REAL,
-    enterprise_value REAL,
+    market_cap_crore REAL,
+    enterprise_value_crore REAL,
 
     pe_ratio REAL,
     pb_ratio REAL,
@@ -135,18 +126,18 @@ CREATE TABLE IF NOT EXISTS market_cap (
 -- PEER GROUPS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS peer_groups (
+CREATE TABLE peer_groups (
     id INTEGER PRIMARY KEY,
-    peer_group TEXT,
+    peer_group_name TEXT,
     company_id TEXT,
-    is_benchmark BOOLEAN
+    is_benchmark TEXT
 );
 
 -- =====================================================
 -- PROFIT & LOSS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS profitandloss (
+CREATE TABLE profitandloss (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     year TEXT,
@@ -162,14 +153,16 @@ CREATE TABLE IF NOT EXISTS profitandloss (
 
     profit_before_tax REAL,
     tax_percentage REAL,
-    net_profit REAL
+    net_profit REAL,
+    eps REAL,
+    dividend_payout REAL
 );
 
 -- =====================================================
--- PROS AND CONS
+-- PROS & CONS
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS prosandcons (
+CREATE TABLE prosandcons (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
     pros TEXT,
@@ -177,19 +170,30 @@ CREATE TABLE IF NOT EXISTS prosandcons (
 );
 
 -- =====================================================
+-- SECTORS
+-- =====================================================
+
+CREATE TABLE sectors (
+    id INTEGER PRIMARY KEY,
+    company_id TEXT,
+    broad_sector TEXT,
+    sub_sector TEXT,
+    index_weight_pct REAL,
+    market_cap_category TEXT
+);
+
+-- =====================================================
 -- STOCK PRICES
 -- =====================================================
 
-CREATE TABLE IF NOT EXISTS stock_prices (
+CREATE TABLE stock_prices (
     id INTEGER PRIMARY KEY,
     company_id TEXT,
-    trade_date TEXT,
-
+    date TEXT,
     open_price REAL,
     high_price REAL,
     low_price REAL,
     close_price REAL,
-
     volume REAL,
     adjusted_close REAL
 );
@@ -198,35 +202,35 @@ CREATE TABLE IF NOT EXISTS stock_prices (
 -- INDEXES
 -- =====================================================
 
-CREATE INDEX IF NOT EXISTS idx_companies_company_id
-ON companies(company_id);
-
-CREATE INDEX IF NOT EXISTS idx_analysis_company
+CREATE INDEX idx_analysis_company
 ON analysis(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_balancesheet_company
+CREATE INDEX idx_balancesheet_company
 ON balancesheet(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_cashflow_company
+CREATE INDEX idx_cashflow_company
 ON cashflow(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_documents_company
+CREATE INDEX idx_documents_company
 ON documents(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_financial_ratios_company
+CREATE INDEX idx_financial_ratios_company
 ON financial_ratios(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_market_cap_company
+CREATE INDEX idx_market_cap_company
 ON market_cap(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_peer_groups_company
+CREATE INDEX idx_peer_groups_company
 ON peer_groups(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_profitandloss_company
+CREATE INDEX idx_profitandloss_company
 ON profitandloss(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_prosandcons_company
+CREATE INDEX idx_prosandcons_company
 ON prosandcons(company_id);
 
-CREATE INDEX IF NOT EXISTS idx_stock_prices_company
+CREATE INDEX idx_sectors_company
+ON sectors(company_id);
+
+CREATE INDEX idx_stock_prices_company
 ON stock_prices(company_id);

@@ -14,7 +14,7 @@ tables = [
     "peer_groups",
     "sectors",
     "prosandcons",
-    "stock_prices",
+    "stock_prices"
 ]
 
 for t in tables:
