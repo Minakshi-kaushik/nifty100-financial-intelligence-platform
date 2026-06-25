@@ -1,0 +1,23 @@
+.PHONY: load test report clean dashboard api ratios
+
+load:
+	python db/loader.py
+
+test:
+	pytest tests/
+
+report:
+	python src/etl/validator.py
+
+ratios:
+	python src/etl/calculate_ratios.py
+
+dashboard:
+	python dashboard/app.py
+
+api:
+	python api/main.py
+
+clean:
+	rm -f db/*.db
+	rm -f output/*.csv
