@@ -255,11 +255,158 @@ def return_on_assets(net_profit: float, total_assets: float) -> Optional[float]:
 
 
 # ============================================================
+# Debt to Equity Ratio
+# ============================================================
+
+
+def debt_to_equity(
+    borrowings: float, equity_capital: float, reserves: float
+) -> Optional[float]:
+    """
+    Debt-to-Equity Ratio
+
+    Formula:
+        Borrowings / (Equity + Reserves)
+
+    Returns:
+        0.0 if borrowings == 0
+        None if equity + reserves <= 0
+    """
+
+    if borrowings == 0:
+        return 0.0
+
+    total_equity = equity_capital + reserves
+
+    if total_equity <= 0:
+        return None
+
+    return safe_round(borrowings / total_equity)
+
+
+# ============================================================
+# High Leverage Flag
+# ============================================================
+
+
+def high_leverage_flag(
+    debt_to_equity_ratio: Optional[float], broad_sector: str
+) -> bool:
+    """
+    Returns True if:
+        D/E > 5 AND company is not in Financials.
+    """
+
+    if debt_to_equity_ratio is None:
+        return False
+
+    if broad_sector.strip().lower() == "financials":
+        return False
+
+    return debt_to_equity_ratio > 5
+
+
+# ============================================================
+# Interest Coverage Ratio
+# ============================================================
+
+
+def interest_coverage_ratio(
+    operating_profit: float, other_income: float, interest: float
+) -> Optional[float]:
+    """
+    Interest Coverage Ratio
+
+    Formula:
+        (Operating Profit + Other Income) / Interest
+
+    Returns None if interest == 0.
+    """
+
+    if interest == 0:
+        return None
+
+    ebit = operating_profit + other_income
+
+    return safe_round(ebit / interest)
+
+
+# ============================================================
+# ICR Label
+# ============================================================
+
+
+def icr_label(icr: Optional[float]) -> Optional[str]:
+    """
+    Returns:
+        'Debt Free' if ICR is None.
+    """
+
+    if icr is None:
+        return "Debt Free"
+
+    return None
+
+
+# ============================================================
+# ICR Warning Flag
+# ============================================================
+
+
+def icr_warning_flag(icr: Optional[float]) -> bool:
+    """
+    Company at risk if ICR < 1.5.
+    """
+
+    if icr is None:
+        return False
+
+    return icr < 1.5
+
+
+# ============================================================
+# Net Debt
+# ============================================================
+
+
+def net_debt(borrowings: float, investments: float) -> float:
+    """
+    Net Debt
+
+    Formula:
+        Borrowings - Investments
+    """
+
+    return safe_round(borrowings - investments)
+
+
+# ============================================================
+# Asset Turnover
+# ============================================================
+
+
+def asset_turnover(sales: float, total_assets: float) -> Optional[float]:
+    """
+    Asset Turnover
+
+    Formula:
+        Sales / Total Assets
+
+    Returns None if assets <= 0.
+    """
+
+    if total_assets <= 0:
+        return None
+
+    return safe_round(sales / total_assets)
+
+
+# ============================================================
 # Profitability Ratio Summary
 # ============================================================
 
 
-def calculate_profitability_ratios(
+def calculate_ratios(
     *,
     company: str,
     year: str,
@@ -267,27 +414,58 @@ def calculate_profitability_ratios(
     net_profit: float,
     operating_profit: float,
     other_income: float,
+    interest: float,
     opm_percentage: Optional[float],
     equity_capital: float,
     reserves: float,
     borrowings: float,
+    investments: float,
     total_assets: float,
     broad_sector: str,
 ) -> dict:
     """
-    Calculate all profitability ratios for a company-year.
+    Calculate all profitability and leverage ratios
+    for a company-year.
 
     Returns
     -------
     dict
+        Dictionary containing all computed KPI values.
     """
 
+    # Calculate reusable values
+    de_ratio = debt_to_equity(
+        borrowings,
+        equity_capital,
+        reserves,
+    )
+
+    icr = interest_coverage_ratio(
+        operating_profit,
+        other_income,
+        interest,
+    )
+
     return {
-        "net_profit_margin_pct": net_profit_margin(net_profit, sales),
-        "operating_profit_margin_pct": operating_profit_margin(
-            operating_profit, sales, opm_percentage, company, year
+        # =====================================================
+        # Profitability Ratios
+        # =====================================================
+        "net_profit_margin_pct": net_profit_margin(
+            net_profit,
+            sales,
         ),
-        "return_on_equity_pct": return_on_equity(net_profit, equity_capital, reserves),
+        "operating_profit_margin_pct": operating_profit_margin(
+            operating_profit,
+            sales,
+            opm_percentage,
+            company,
+            year,
+        ),
+        "return_on_equity_pct": return_on_equity(
+            net_profit,
+            equity_capital,
+            reserves,
+        ),
         "return_on_capital_employed_pct": return_on_capital_employed(
             operating_profit,
             other_income,
@@ -296,7 +474,33 @@ def calculate_profitability_ratios(
             borrowings,
             broad_sector,
         ),
-        "return_on_assets_pct": return_on_assets(net_profit, total_assets),
+        "return_on_assets_pct": return_on_assets(
+            net_profit,
+            total_assets,
+        ),
+        # =====================================================
+        # Leverage & Efficiency Ratios
+        # =====================================================
+        "debt_to_equity": de_ratio,
+        "high_leverage_flag": high_leverage_flag(
+            de_ratio,
+            broad_sector,
+        ),
+        "interest_coverage": icr,
+        "icr_label": icr_label(
+            icr,
+        ),
+        "icr_warning_flag": icr_warning_flag(
+            icr,
+        ),
+        "net_debt": net_debt(
+            borrowings,
+            investments,
+        ),
+        "asset_turnover": asset_turnover(
+            sales,
+            total_assets,
+        ),
     }
 
 
@@ -304,30 +508,31 @@ def calculate_profitability_ratios(
 # Demo
 # ============================================================
 
+# ============================================================
+# Demo
+# ============================================================
+
 if __name__ == "__main__":
-    ratios = calculate_profitability_ratios(
+    ratios = calculate_ratios(
         company="ABC Ltd",
         year="2025",
         sales=1000,
         net_profit=120,
         operating_profit=220,
         other_income=10,
+        interest=20,
         opm_percentage=22.5,
         equity_capital=100,
         reserves=500,
         borrowings=200,
+        investments=50,
         total_assets=1200,
         broad_sector="Information Technology",
     )
 
-    print("\nProfitability Ratios\n")
+    print("\n========== Financial Ratio Engine ==========\n")
 
     for key, value in ratios.items():
         print(f"{key:35} : {value}")
 
-# ============================================================
-# Placeholder
-# ============================================================
-
-if __name__ == "__main__":
-    print("Profitability Ratio Engine Loaded Successfully")
+    print("\nFinancial Ratio Engine Loaded Successfully")
