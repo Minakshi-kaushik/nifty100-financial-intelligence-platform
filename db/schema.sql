@@ -83,25 +83,84 @@ CREATE TABLE documents (
 
 CREATE TABLE financial_ratios (
     id INTEGER PRIMARY KEY,
-    company_id TEXT,
-    year TEXT,
+
+    company_id TEXT NOT NULL,
+    year TEXT NOT NULL,
+
+    -- =====================================================
+    -- Profitability Ratios
+    -- =====================================================
 
     net_profit_margin_pct REAL,
     operating_profit_margin_pct REAL,
     return_on_equity_pct REAL,
+    return_on_capital_employed_pct REAL,
+    return_on_assets_pct REAL,
+
+    -- =====================================================
+    -- Leverage & Efficiency
+    -- =====================================================
+
     debt_to_equity REAL,
     interest_coverage REAL,
     asset_turnover REAL,
+    net_debt_cr REAL,
+
+    high_leverage_flag INTEGER DEFAULT 0,
+    icr_warning_flag INTEGER DEFAULT 0,
+    icr_label TEXT,
+
+    -- =====================================================
+    -- Cash Flow KPIs
+    -- =====================================================
 
     free_cash_flow_cr REAL,
     capex_cr REAL,
+    fcf_conversion_pct REAL,
+    cash_from_operations_cr REAL,
+    cfo_quality_score REAL,
+    cfo_quality_label TEXT,
+
+    capital_allocation_pattern TEXT,
+
+    -- =====================================================
+    -- Per Share Metrics
+    -- =====================================================
 
     earnings_per_share REAL,
     book_value_per_share REAL,
     dividend_payout_ratio_pct REAL,
 
     total_debt_cr REAL,
-    cash_from_operations_cr REAL
+
+    -- =====================================================
+    -- Growth Metrics
+    -- =====================================================
+
+    revenue_cagr_3yr REAL,
+    revenue_cagr_5yr REAL,
+    revenue_cagr_10yr REAL,
+
+    pat_cagr_3yr REAL,
+    pat_cagr_5yr REAL,
+    pat_cagr_10yr REAL,
+
+    eps_cagr_3yr REAL,
+    eps_cagr_5yr REAL,
+    eps_cagr_10yr REAL,
+
+    revenue_cagr_flag TEXT,
+    pat_cagr_flag TEXT,
+    eps_cagr_flag TEXT,
+
+    -- =====================================================
+    -- Composite Score
+    -- =====================================================
+
+    composite_quality_score REAL,
+
+    FOREIGN KEY(company_id)
+        REFERENCES companies(id)
 );
 
 -- =====================================================
@@ -234,3 +293,4 @@ ON sectors(company_id);
 
 CREATE INDEX idx_stock_prices_company
 ON stock_prices(company_id);
+

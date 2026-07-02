@@ -1,24 +1,11 @@
 import sqlite3
 
 conn = sqlite3.connect("db/nifty100.db")
+cur = conn.cursor()
 
-tables = [
-    "companies",
-    "profitandloss",
-    "balancesheet",
-    "cashflow",
-    "analysis",
-    "documents",
-    "financial_ratios",
-    "market_cap",
-    "peer_groups",
-    "sectors",
-    "prosandcons",
-    "stock_prices",
-]
+cur.execute("PRAGMA table_info(financial_ratios)")
 
-for t in tables:
-    count = conn.execute(f"SELECT COUNT(*) FROM {t}").fetchone()[0]
-    print(f"{t}: {count}")
+for col in cur.fetchall():
+    print(col[1])
 
 conn.close()

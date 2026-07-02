@@ -5,6 +5,8 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DB_PATH = BASE_DIR / "db" / "nifty100.db"
+SCHEMA_PATH = BASE_DIR / "db" / "schema.sql"
+
 DATA_DIR = BASE_DIR / "data" / "raw"
 OUTPUT_DIR = BASE_DIR / "output"
 
@@ -26,7 +28,23 @@ FILES = {
 }
 
 
+def create_database():
+
+    if DB_PATH.exists():
+        DB_PATH.unlink()
+
+    conn = sqlite3.connect(DB_PATH)
+
+    with open(SCHEMA_PATH, "r", encoding="utf-8") as schema:
+        conn.executescript(schema.read())
+
+    print("\nDatabase schema created successfully.")
+
+    return conn
+
+
 def load_table(conn, table_name, file_path, header_row):
+
     print(f"\n{'=' * 70}")
     print(f"Loading {table_name}")
     print(f"{'=' * 70}")
@@ -44,25 +62,39 @@ def load_table(conn, table_name, file_path, header_row):
     print(f"Rows Found : {len(df)}")
     print(f"Columns    : {len(df.columns)}")
 
-    df.to_sql(table_name, conn, if_exists="append", index=False)
+    df.to_sql(
+        table_name,
+        conn,
+        if_exists="append",
+        index=False,
+    )
 
     print(f"Loaded {len(df)} rows")
 
-    return {"table_name": table_name, "rows_loaded": len(df), "rows_rejected": 0}
+    return {
+        "table_name": table_name,
+        "rows_loaded": len(df),
+        "rows_rejected": 0,
+    }
 
 
 def main():
 
     print("\nStarting Full Data Load...\n")
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = create_database()
 
     load_audit = []
 
     for table_name, (file_name, header_row) in FILES.items():
-        audit_row = load_table(conn, table_name, DATA_DIR / file_name, header_row)
+        audit = load_table(
+            conn,
+            table_name,
+            DATA_DIR / file_name,
+            header_row,
+        )
 
-        load_audit.append(audit_row)
+        load_audit.append(audit)
 
     conn.commit()
     conn.close()
@@ -71,7 +103,10 @@ def main():
 
     audit_file = OUTPUT_DIR / "load_audit.csv"
 
-    audit_df.to_csv(audit_file, index=False)
+    audit_df.to_csv(
+        audit_file,
+        index=False,
+    )
 
     print("\n" + "=" * 70)
     print("LOAD COMPLETE")
@@ -79,7 +114,7 @@ def main():
 
     print(f"\nAudit File Created : {audit_file}")
 
-    print("\nSummary")
+    print("\nSummary\n")
     print(audit_df)
 
     print("\nAll tables loaded successfully.")

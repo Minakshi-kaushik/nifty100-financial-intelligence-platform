@@ -34,14 +34,11 @@ def safe_round(value: Optional[float], digits: int = 2):
 
 
 def free_cash_flow(
-    operating_activity: float,
-    investing_activity: float,
-) -> float:
-    """
-    FCF = CFO + Investing Activity
-
-    Investing activity is generally negative.
-    """
+    operating_activity,
+    investing_activity,
+):
+    if operating_activity is None or investing_activity is None:
+        return None
 
     return safe_round(operating_activity + investing_activity)
 
@@ -228,3 +225,65 @@ if __name__ == "__main__":
             1.2,
         )
     )
+
+
+def calculate_cashflow_kpis(
+    *,
+    operating_activity: float,
+    investing_activity: float,
+    financing_activity: float,
+    operating_profit: float,
+    sales: float,
+    cfo_history: list[float],
+    pat_history: list[float],
+):
+    """
+    Calculate all cash flow KPIs for a company-year.
+    """
+
+    fcf = free_cash_flow(
+        operating_activity,
+        investing_activity,
+    )
+
+    quality = cfo_quality_score(
+        cfo_history,
+        pat_history,
+    )
+
+    if quality is None:
+        score = None
+        quality_label = None
+        ratio = None
+    else:
+        score, quality_label = quality
+        ratio = score
+
+    capex = capex_intensity(
+        investing_activity,
+        sales,
+    )
+
+    if capex is None:
+        capex_pct = None
+        capex_label = None
+    else:
+        capex_pct, capex_label = capex
+
+    return {
+        "free_cash_flow_cr": fcf,
+        "cfo_quality_score": score,
+        "cfo_quality_label": quality_label,
+        "capex_cr": capex_pct,
+        "capex_label": capex_label,
+        "fcf_conversion_pct": fcf_conversion_rate(
+            fcf,
+            operating_profit,
+        ),
+        "capital_allocation_pattern": capital_allocation_pattern(
+            operating_activity,
+            investing_activity,
+            financing_activity,
+            ratio,
+        ),
+    }

@@ -312,18 +312,20 @@ def high_leverage_flag(
 
 
 def interest_coverage_ratio(
-    operating_profit: float, other_income: float, interest: float
-) -> Optional[float]:
+    operating_profit,
+    other_income,
+    interest,
+):
     """
     Interest Coverage Ratio
 
-    Formula:
-        (Operating Profit + Other Income) / Interest
-
-    Returns None if interest == 0.
+    EBIT / Interest
     """
 
-    if interest == 0:
+    operating_profit = operating_profit or 0
+    other_income = other_income or 0
+
+    if interest in (None, 0):
         return None
 
     ebit = operating_profit + other_income
