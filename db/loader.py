@@ -28,6 +28,11 @@ FILES = {
 }
 
 
+# ==========================================================
+# Create Database
+# ==========================================================
+
+
 def create_database():
 
     if DB_PATH.exists():
@@ -41,6 +46,11 @@ def create_database():
     print("\nDatabase schema created successfully.")
 
     return conn
+
+
+# ==========================================================
+# Load One Table
+# ==========================================================
 
 
 def load_table(conn, table_name, file_path, header_row):
@@ -60,7 +70,27 @@ def load_table(conn, table_name, file_path, header_row):
     )
 
     print(f"Rows Found : {len(df)}")
-    print(f"Columns    : {len(df.columns)}")
+
+    # ------------------------------------------------------
+    # Remove duplicate company-year rows
+    # ------------------------------------------------------
+
+    if {"company_id", "year"}.issubset(df.columns):
+        before = len(df)
+
+        df = df.drop_duplicates(
+            subset=["company_id", "year"],
+            keep="first",
+        )
+
+        removed = before - len(df)
+
+        print(f"Duplicates Removed : {removed}")
+
+    else:
+        print("Duplicates Removed : N/A")
+
+    print(f"Columns : {len(df.columns)}")
 
     df.to_sql(
         table_name,
@@ -76,6 +106,11 @@ def load_table(conn, table_name, file_path, header_row):
         "rows_loaded": len(df),
         "rows_rejected": 0,
     }
+
+
+# ==========================================================
+# Main
+# ==========================================================
 
 
 def main():

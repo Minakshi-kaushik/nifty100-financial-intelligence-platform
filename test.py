@@ -1,11 +1,24 @@
 import sqlite3
 
 conn = sqlite3.connect("db/nifty100.db")
-cur = conn.cursor()
+cursor = conn.cursor()
 
-cur.execute("PRAGMA table_info(financial_ratios)")
+cursor.execute("""
+SELECT COUNT(*)
+FROM profitandloss
+""")
+print("Profit rows:", cursor.fetchone()[0])
 
-for col in cur.fetchall():
-    print(col[1])
+cursor.execute("""
+SELECT COUNT(*)
+FROM balancesheet
+""")
+print("Balance rows:", cursor.fetchone()[0])
+
+cursor.execute("""
+SELECT COUNT(*)
+FROM cashflow
+""")
+print("Cashflow rows:", cursor.fetchone()[0])
 
 conn.close()
