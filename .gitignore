@@ -1,9 +1,16 @@
+# Python
 venv/
 __pycache__/
 *.pyc
 
-data/raw/
-data/interim/
-data/processed/
+# SQLite database
+db/*.db
 
-.env
+# Generated reports
+output/
+
+# Generated radar charts
+reports/radar_charts/
+
+# Jupyter
+.ipynb_checkpoints/
