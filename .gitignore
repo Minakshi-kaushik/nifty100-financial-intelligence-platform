@@ -14,3 +14,7 @@ reports/radar_charts/
 
 # Jupyter
 .ipynb_checkpoints/
+
+output/
+
+.streamlit/
