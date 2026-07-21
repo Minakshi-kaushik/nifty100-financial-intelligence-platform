@@ -11,7 +11,7 @@ import sqlite3
 from pathlib import Path
 
 from src.analytics.ratios import calculate_ratios
-from src.analytics.cashflow_kpis import calculate_cashflow_kpis
+from src.analytics.cashflow_kpis_initial import calculate_cashflow_kpis
 from src.analytics.cagr import calculate_metric_cagr
 
 import csv

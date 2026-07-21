@@ -1,289 +1,179 @@
 """
 cashflow_kpis.py
 
-Sprint 2 - Cash Flow KPI Engine
+Sprint 5
+Cash Flow Intelligence
 
-Implements:
-- Free Cash Flow
-- CFO Quality Score
-- CapEx Intensity
-- FCF Conversion Rate
-- Capital Allocation Pattern Classification
+Outputs:
+--------
+output/cashflow_intelligence.xlsx
+output/distress_alerts.csv
 """
 
-from __future__ import annotations
+from pathlib import Path
+import sqlite3
+import pandas as pd
 
-from typing import Optional
+BASE_DIR = Path(__file__).resolve().parents[2]
 
+DB_PATH = BASE_DIR / "db" / "nifty100.db"
 
-# ============================================================
-# Helper
-# ============================================================
-
-
-def safe_round(value: Optional[float], digits: int = 2):
-    if value is None:
-        return None
-
-    return round(value, digits)
+OUTPUT = BASE_DIR / "output"
+OUTPUT.mkdir(exist_ok=True)
 
 
-# ============================================================
-# Free Cash Flow
-# ============================================================
+def load_data():
 
+    conn = sqlite3.connect(DB_PATH)
 
-def free_cash_flow(
-    operating_activity,
-    investing_activity,
-):
-    if operating_activity is None or investing_activity is None:
-        return None
+    query = """
+    SELECT
 
-    return safe_round(operating_activity + investing_activity)
+        fr.company_id,
 
+        fr.year,
 
-# ============================================================
-# CFO Quality Score
-# ============================================================
+        fr.free_cash_flow_cr,
 
+        fr.cash_from_operations_cr,
 
-def cfo_quality_score(
-    cfo_values: list[float],
-    pat_values: list[float],
-):
-    """
-    Average CFO/PAT ratio across available years.
+        fr.fcf_conversion_pct,
 
-    >1.0 High Quality
-    0.5-1.0 Moderate
-    <0.5 Accrual Risk
-    """
+        fr.capital_allocation_pattern,
 
-    if len(cfo_values) != len(pat_values):
-        raise ValueError("History length mismatch")
+        fr.cfo_quality_score,
 
-    ratios = []
+        fr.cfo_quality_label,
 
-    for cfo, pat in zip(cfo_values, pat_values):
-        if pat == 0:
-            continue
+        fr.total_debt_cr,
 
-        ratios.append(cfo / pat)
+        p.sales,
 
-    if not ratios:
-        return None
+        p.net_profit,
 
-    avg = sum(ratios) / len(ratios)
+        cf.operating_activity,
 
-    avg = safe_round(avg)
+        cf.investing_activity,
 
-    if avg > 1:
-        return avg, "High Quality"
+        cf.financing_activity,
 
-    if avg >= 0.5:
-        return avg, "Moderate"
+        bs.borrowings,
 
-    return avg, "Accrual Risk"
+        s.broad_sector
 
+    FROM financial_ratios fr
 
-# ============================================================
-# CapEx Intensity
-# ============================================================
+    LEFT JOIN profitandloss p
+        ON fr.company_id=p.company_id
+        AND fr.year=p.year
 
+    LEFT JOIN cashflow cf
+        ON fr.company_id=cf.company_id
+        AND fr.year=cf.year
 
-def capex_intensity(
-    investing_activity: float,
-    sales: float,
-):
-    """
-    CapEx Intensity
+    LEFT JOIN balancesheet bs
+        ON fr.company_id=bs.company_id
+        AND fr.year=bs.year
 
-    abs(CapEx) / Sales
+    LEFT JOIN sectors s
+        ON fr.company_id=s.company_id
     """
 
-    if sales == 0:
-        return None
+    df = pd.read_sql(query, conn)
 
-    pct = abs(investing_activity) / sales * 100
+    conn.close()
 
-    pct = safe_round(pct)
-
-    if pct < 3:
-        label = "Asset Light"
-
-    elif pct <= 8:
-        label = "Moderate"
-
-    else:
-        label = "Capital Intensive"
-
-    return pct, label
+    return df
 
 
-# ============================================================
-# FCF Conversion
-# ============================================================
+def classify_capex(x):
+
+    if pd.isna(x):
+        return "Unknown"
+
+    if x < 3:
+        return "Asset Light"
+
+    if x < 8:
+        return "Moderate"
+
+    return "Capital Intensive"
 
 
-def fcf_conversion_rate(
-    free_cash_flow_value: float,
-    operating_profit: float,
-):
-    """
-    FCF / Operating Profit
-    """
+def build(df):
 
-    if operating_profit == 0:
-        return None
+    df["capex_intensity_pct"] = (df["investing_activity"].abs() / df["sales"]) * 100
 
-    return safe_round(free_cash_flow_value / operating_profit * 100)
+    df["capex_label"] = df["capex_intensity_pct"].apply(classify_capex)
+
+    df["distress_flag"] = (df["operating_activity"] < 0) & (
+        df["financing_activity"] > 0
+    )
+
+    df = df.sort_values(
+        [
+            "company_id",
+            "year",
+        ]
+    )
+
+    df["prev_debt"] = df.groupby("company_id")["borrowings"].shift(1)
+
+    df["deleveraging_flag"] = (df["financing_activity"] < 0) & (
+        df["borrowings"] < df["prev_debt"]
+    )
+
+    return df
 
 
-# ============================================================
-# Capital Allocation Pattern
-# ============================================================
+def export(df):
+
+    cols = [
+        "company_id",
+        "broad_sector",
+        "cfo_quality_score",
+        "cfo_quality_label",
+        "capex_intensity_pct",
+        "capex_label",
+        "fcf_conversion_pct",
+        "capital_allocation_pattern",
+        "distress_flag",
+        "deleveraging_flag",
+    ]
+
+    df[cols].to_excel(
+        OUTPUT / "cashflow_intelligence.xlsx",
+        index=False,
+    )
+
+    alerts = df[df["distress_flag"]]
+
+    alerts.to_csv(
+        OUTPUT / "distress_alerts.csv",
+        index=False,
+    )
 
 
-def capital_allocation_pattern(
-    operating_activity: float,
-    investing_activity: float,
-    financing_activity: float,
-    cfo_pat_ratio: Optional[float] = None,
-):
-    """
-    Classify capital allocation pattern.
-    """
+def main():
 
-    cfo = operating_activity >= 0
-    cfi = investing_activity >= 0
-    cff = financing_activity >= 0
+    df = load_data()
 
-    pattern = (cfo, cfi, cff)
+    df = build(df)
 
-    if pattern == (True, False, False):
-        if cfo_pat_ratio is not None and cfo_pat_ratio > 1:
-            return "Shareholder Returns"
+    export(df)
 
-        return "Reinvestor"
+    print("=" * 60)
 
-    if pattern == (True, True, False):
-        return "Liquidating Assets"
+    print("Cashflow Intelligence Complete")
 
-    if pattern == (False, True, True):
-        return "Distress Signal"
+    print("=" * 60)
 
-    if pattern == (False, False, True):
-        return "Growth Funded by Debt"
+    print(df.head())
 
-    if pattern == (True, True, True):
-        return "Cash Accumulator"
+    print()
 
-    if pattern == (False, False, False):
-        return "Pre-Revenue"
-
-    if pattern == (True, False, True):
-        return "Mixed"
-
-    return "Unknown"
+    print("Rows :", len(df))
 
 
 if __name__ == "__main__":
-    fcf = free_cash_flow(
-        500,
-        -200,
-    )
-
-    print("FCF :", fcf)
-
-    print(
-        cfo_quality_score(
-            [100, 120, 130, 140, 150],
-            [90, 100, 120, 130, 140],
-        )
-    )
-
-    print(
-        capex_intensity(
-            -50,
-            1000,
-        )
-    )
-
-    print(
-        fcf_conversion_rate(
-            fcf,
-            400,
-        )
-    )
-
-    print(
-        capital_allocation_pattern(
-            400,
-            -150,
-            -100,
-            1.2,
-        )
-    )
-
-
-def calculate_cashflow_kpis(
-    *,
-    operating_activity: float,
-    investing_activity: float,
-    financing_activity: float,
-    operating_profit: float,
-    sales: float,
-    cfo_history: list[float],
-    pat_history: list[float],
-):
-    """
-    Calculate all cash flow KPIs for a company-year.
-    """
-
-    fcf = free_cash_flow(
-        operating_activity,
-        investing_activity,
-    )
-
-    quality = cfo_quality_score(
-        cfo_history,
-        pat_history,
-    )
-
-    if quality is None:
-        score = None
-        quality_label = None
-        ratio = None
-    else:
-        score, quality_label = quality
-        ratio = score
-
-    capex = capex_intensity(
-        investing_activity,
-        sales,
-    )
-
-    if capex is None:
-        capex_pct = None
-        capex_label = None
-    else:
-        capex_pct, capex_label = capex
-
-    return {
-        "free_cash_flow_cr": fcf,
-        "cfo_quality_score": score,
-        "cfo_quality_label": quality_label,
-        "capex_cr": capex_pct,
-        "capex_label": capex_label,
-        "fcf_conversion_pct": fcf_conversion_rate(
-            fcf,
-            operating_profit,
-        ),
-        "capital_allocation_pattern": capital_allocation_pattern(
-            operating_activity,
-            investing_activity,
-            financing_activity,
-            ratio,
-        ),
-    }
+    main()
