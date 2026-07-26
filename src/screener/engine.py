@@ -200,10 +200,23 @@ def run_preset(name):
 
     filters = config[name]
 
-    result = apply_filters(
-        df,
-        filters,
-    )
+    print(f"\nInitial rows : {len(df)}")
+
+    for key, value in filters.items():
+        before = len(df)
+
+        df = apply_filters(df, {key: value})
+
+        after = len(df)
+
+        print(f"{key} = {value} : {before} -> {after}")
+
+    result = df
+
+    # result = apply_filters(
+    #     df,
+    #     filters,
+    # )
     result["composite_quality_score"] = compute_composite_score(result)
 
     result = result.sort_values(

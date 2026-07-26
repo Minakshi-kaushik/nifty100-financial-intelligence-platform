@@ -146,6 +146,8 @@ def extract_history(history_rows, column):
 def calculate_all_cagrs(history_rows):
 
     sales_history = extract_history(history_rows, "sales")
+    print("History length:", len(sales_history))
+    print("History:", sales_history)
     pat_history = extract_history(history_rows, "net_profit")
     eps_history = extract_history(history_rows, "eps")
 
@@ -153,16 +155,29 @@ def calculate_all_cagrs(history_rows):
         sales_history,
         5,
     )
+    print(
+        "Revenue CAGR:",
+        revenue5,
+        "Flag:",
+        revenue_flag,
+    )
 
     pat5, pat_flag = calculate_metric_cagr(
         pat_history,
         5,
+    )
+    print(
+        "PAT CAGR:",
+        pat5,
+        "Flag:",
+        pat_flag,
     )
 
     eps5, eps_flag = calculate_metric_cagr(
         eps_history,
         5,
     )
+    print("EPS CAGR:", eps5, eps_flag)
 
     return {
         "revenue_cagr_5yr": revenue5,
@@ -270,7 +285,12 @@ def process_record(conn, row):
 def insert_financial_ratio(conn, row, ratios):
 
     cursor = conn.cursor()
-
+    print(
+        row["company_id"],
+        ratios.get("revenue_cagr_5yr"),
+        ratios.get("pat_cagr_5yr"),
+        ratios.get("eps_cagr_5yr"),
+    )
     cursor.execute(
         """
         INSERT INTO financial_ratios(

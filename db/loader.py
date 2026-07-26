@@ -131,7 +131,15 @@ def main():
 
         load_audit.append(audit)
 
+    print("\nCommitting changes...")
+
     conn.commit()
+    cursor = conn.cursor()
+
+    for table in FILES.keys():
+        cursor.execute(f"SELECT COUNT(*) FROM {table}")
+        print(table, cursor.fetchone()[0])
+
     conn.close()
 
     audit_df = pd.DataFrame(load_audit)

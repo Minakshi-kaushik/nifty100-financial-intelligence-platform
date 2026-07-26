@@ -114,6 +114,9 @@ def compute_peer_percentiles():
 
     result = build_peer_percentiles(df)
 
+    print(result.shape)
+    print(result.head())
+    print(result.columns)
     save(result)
 
     return result

@@ -68,3 +68,8 @@ watchdog==6.0.0
 websockets==16.0
 win32_setctime==1.2.0
 xlsxwriter==3.2.9
+scikit-learn
+seaborn
+fastapi
+uvicorn
+reportlab
