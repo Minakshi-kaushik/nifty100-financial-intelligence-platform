@@ -200,6 +200,20 @@ def run_preset(name):
 
     filters = config[name]
 
+    print("\n===== DATA SUMMARY =====")
+    print(
+        df[
+            [
+                "return_on_equity_pct",
+                "debt_to_equity",
+                "free_cash_flow_cr",
+                "revenue_cagr_5yr",
+                "broad_sector",
+            ]
+        ].describe(include="all")
+    )
+    print("========================\n")
+
     print(f"\nInitial rows : {len(df)}")
 
     for key, value in filters.items():

@@ -140,6 +140,9 @@ def main():
         cursor.execute(f"SELECT COUNT(*) FROM {table}")
         print(table, cursor.fetchone()[0])
 
+    cur = conn.cursor()
+    cur.execute("SELECT COUNT(*) FROM financial_ratios")
+    print("Rows before closing:", cur.fetchone()[0])
     conn.close()
 
     audit_df = pd.DataFrame(load_audit)
@@ -164,4 +167,6 @@ def main():
 
 
 if __name__ == "__main__":
+    print("DB PATH:", DB_PATH.resolve())
+    print("DB EXISTS:", DB_PATH.exists())
     main()

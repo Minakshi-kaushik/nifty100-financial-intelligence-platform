@@ -74,7 +74,7 @@ def build_peer_percentiles(df):
 
     records = []
 
-    groups = df.groupby("peer_group_name")
+    groups = df.dropna(subset=["peer_group_name"]).groupby("peer_group_name")
 
     for group_name, group in groups:
         for metric, inverse in METRICS.items():

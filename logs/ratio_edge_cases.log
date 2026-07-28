@@ -4472,3 +4472,512 @@
 2026-07-27 01:45:59,921 | INFO | Financial sector company detected. ROCE benchmark skipped.
 2026-07-27 01:45:59,921 | INFO | Financial sector company detected. ROCE benchmark skipped.
 2026-07-27 01:45:59,926 | WARNING | OPM mismatch | Company=Sun Pharmaceuticals Industries Ltd | Year=Mar 2024 | Calculated=26.84% | Source=28.00% | Difference=1.16%
+2026-07-28 19:04:38,817 | WARNING | OPM mismatch | Company=Adani Energy Solutions Ltd | Year=Mar 2024 | Calculated=34.39% | Source=30.00% | Difference=4.39%
+2026-07-28 19:04:38,858 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2013 | Calculated=30.58% | Source=1353.00% | Difference=1322.42%
+2026-07-28 19:04:38,858 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,859 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2014 | Calculated=31.47% | Source=2307.00% | Difference=2275.53%
+2026-07-28 19:04:38,859 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,860 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2015 | Calculated=31.36% | Source=3097.00% | Difference=3065.64%
+2026-07-28 19:04:38,860 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,861 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2016 | Calculated=32.61% | Source=3466.00% | Difference=3433.39%
+2026-07-28 19:04:38,861 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,862 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2017 | Calculated=53.45% | Source=-5715.00% | Difference=5768.45%
+2026-07-28 19:04:38,862 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,862 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2018 | Calculated=63.12% | Source=-10277.00% | Difference=10340.12%
+2026-07-28 19:04:38,862 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,863 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2019 | Calculated=49.39% | Source=-5447.00% | Difference=5496.39%
+2026-07-28 19:04:38,863 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,864 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2020 | Calculated=55.98% | Source=-9859.00% | Difference=9914.98%
+2026-07-28 19:04:38,864 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,865 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2021 | Calculated=50.12% | Source=-2510.00% | Difference=2560.12%
+2026-07-28 19:04:38,865 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,865 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2022 | Calculated=44.47% | Source=3170.00% | Difference=3125.53%
+2026-07-28 19:04:38,865 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,866 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2023 | Calculated=34.16% | Source=13857.00% | Difference=13822.84%
+2026-07-28 19:04:38,866 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,867 | WARNING | OPM mismatch | Company=Axis Bank Ltd | Year=Mar 2024 | Calculated=34.69% | Source=11952.00% | Difference=11917.31%
+2026-07-28 19:04:38,867 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,872 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,873 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,873 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,874 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,875 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,875 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,876 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,877 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,877 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,879 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,880 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,880 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,881 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,881 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,882 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,882 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,882 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,883 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,883 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,884 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,884 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,884 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,885 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,885 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,886 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2015 | Calculated=32.49% | Source=1367.00% | Difference=1334.51%
+2026-07-28 19:04:38,886 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,886 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2016 | Calculated=32.25% | Source=1986.00% | Difference=1953.75%
+2026-07-28 19:04:38,886 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,887 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2017 | Calculated=32.60% | Source=2867.00% | Difference=2834.40%
+2026-07-28 19:04:38,887 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,887 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2018 | Calculated=32.28% | Source=3935.00% | Difference=3902.72%
+2026-07-28 19:04:38,887 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,887 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2019 | Calculated=29.50% | Source=6310.00% | Difference=6280.50%
+2026-07-28 19:04:38,887 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,888 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2020 | Calculated=34.73% | Source=7608.00% | Difference=7573.27%
+2026-07-28 19:04:38,888 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,888 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2021 | Calculated=40.64% | Source=6314.00% | Difference=6273.36%
+2026-07-28 19:04:38,888 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,889 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2022 | Calculated=37.55% | Source=9906.00% | Difference=9868.45%
+2026-07-28 19:04:38,889 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,889 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2023 | Calculated=30.65% | Source=16018.00% | Difference=15987.35%
+2026-07-28 19:04:38,889 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,890 | WARNING | OPM mismatch | Company=Bajaj Finance Ltd | Year=Mar 2024 | Calculated=29.29% | Source=19987.00% | Difference=19957.71%
+2026-07-28 19:04:38,890 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,890 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2013 | Calculated=30.05% | Source=1006.00% | Difference=975.95%
+2026-07-28 19:04:38,890 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,890 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2014 | Calculated=29.78% | Source=809.00% | Difference=779.22%
+2026-07-28 19:04:38,891 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,891 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2015 | Calculated=29.98% | Source=902.00% | Difference=872.02%
+2026-07-28 19:04:38,891 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,891 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2016 | Calculated=55.44% | Source=-11700.00% | Difference=11755.44%
+2026-07-28 19:04:38,891 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,892 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2017 | Calculated=43.28% | Source=-4372.00% | Difference=4415.28%
+2026-07-28 19:04:38,892 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,892 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2018 | Calculated=56.65% | Source=-9197.00% | Difference=9253.65%
+2026-07-28 19:04:38,892 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,893 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2019 | Calculated=48.79% | Source=-5414.00% | Difference=5462.79%
+2026-07-28 19:04:38,893 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,893 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2020 | Calculated=51.44% | Source=-11728.00% | Difference=11779.44%
+2026-07-28 19:04:38,893 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,894 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2021 | Calculated=51.23% | Source=-6957.00% | Difference=7008.23%
+2026-07-28 19:04:38,894 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,894 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2022 | Calculated=51.12% | Source=-2948.00% | Difference=2999.12%
+2026-07-28 19:04:38,894 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,894 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2023 | Calculated=40.45% | Source=6329.00% | Difference=6288.55%
+2026-07-28 19:04:38,894 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,895 | WARNING | OPM mismatch | Company=Bank of Baroda | Year=Mar 2024 | Calculated=37.49% | Source=4102.00% | Difference=4064.51%
+2026-07-28 19:04:38,895 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,921 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2013 | Calculated=21.18% | Source=655.00% | Difference=633.82%
+2026-07-28 19:04:38,921 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,921 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2014 | Calculated=24.35% | Source=-672.00% | Difference=696.35%
+2026-07-28 19:04:38,922 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,922 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2015 | Calculated=23.51% | Source=-621.00% | Difference=644.51%
+2026-07-28 19:04:38,922 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,922 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2016 | Calculated=40.38% | Source=-8008.00% | Difference=8048.38%
+2026-07-28 19:04:38,922 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,923 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2017 | Calculated=37.85% | Source=-5775.00% | Difference=5812.85%
+2026-07-28 19:04:38,923 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,923 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2018 | Calculated=61.87% | Source=-13350.00% | Difference=13411.87%
+2026-07-28 19:04:38,923 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,924 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2019 | Calculated=56.73% | Source=-11590.00% | Difference=11646.73%
+2026-07-28 19:04:38,924 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,924 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2020 | Calculated=53.88% | Source=-12867.00% | Difference=12920.88%
+2026-07-28 19:04:38,924 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,925 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2021 | Calculated=61.83% | Source=-18367.00% | Difference=18428.83%
+2026-07-28 19:04:38,925 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,925 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2022 | Calculated=58.39% | Source=-13657.00% | Difference=13715.39%
+2026-07-28 19:04:38,925 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,926 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2023 | Calculated=49.80% | Source=-9877.00% | Difference=9926.80%
+2026-07-28 19:04:38,926 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,926 | WARNING | OPM mismatch | Company=Canara Bank | Year=Mar 2024 | Calculated=41.75% | Source=-7745.00% | Difference=7786.75%
+2026-07-28 19:04:38,926 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,927 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2013 | Calculated=26.77% | Source=472.00% | Difference=445.23%
+2026-07-28 19:04:38,927 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,927 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2014 | Calculated=28.42% | Source=578.00% | Difference=549.58%
+2026-07-28 19:04:38,927 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,928 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2015 | Calculated=28.56% | Source=696.00% | Difference=667.44%
+2026-07-28 19:04:38,928 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,928 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2016 | Calculated=30.04% | Source=899.00% | Difference=868.96%
+2026-07-28 19:04:38,928 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,928 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2017 | Calculated=28.16% | Source=1143.00% | Difference=1114.84%
+2026-07-28 19:04:38,929 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,929 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2018 | Calculated=26.10% | Source=1451.00% | Difference=1424.90%
+2026-07-28 19:04:38,929 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,929 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2019 | Calculated=22.96% | Source=1888.00% | Difference=1865.04%
+2026-07-28 19:04:38,929 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,930 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2020 | Calculated=27.79% | Source=1699.00% | Difference=1671.21%
+2026-07-28 19:04:38,930 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,930 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2021 | Calculated=30.40% | Source=2094.00% | Difference=2063.60%
+2026-07-28 19:04:38,930 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,931 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2022 | Calculated=28.83% | Source=2924.00% | Difference=2895.17%
+2026-07-28 19:04:38,931 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,931 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2023 | Calculated=28.10% | Source=3515.00% | Difference=3486.90%
+2026-07-28 19:04:38,931 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,931 | WARNING | OPM mismatch | Company=Cholamandalam Investment & Finance Company Ltd | Year=Mar 2024 | Calculated=28.10% | Source=4548.00% | Difference=4519.90%
+2026-07-28 19:04:38,932 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,932 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2013 | Calculated=73.26% | Source=2214.00% | Difference=2140.74%
+2026-07-28 19:04:38,932 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2014 | Calculated=78.90% | Source=2147.00% | Difference=2068.10%
+2026-07-28 19:04:38,933 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2015 | Calculated=80.94% | Source=2163.00% | Difference=2082.06%
+2026-07-28 19:04:38,933 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2016 | Calculated=82.02% | Source=2480.00% | Difference=2397.98%
+2026-07-28 19:04:38,934 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2017 | Calculated=82.66% | Source=2496.00% | Difference=2413.34%
+2026-07-28 19:04:38,934 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2018 | Calculated=81.35% | Source=2826.00% | Difference=2744.65%
+2026-07-28 19:04:38,934 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2019 | Calculated=81.07% | Source=3097.00% | Difference=3015.93%
+2026-07-28 19:04:38,935 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2020 | Calculated=81.29% | Source=3206.00% | Difference=3124.71%
+2026-07-28 19:04:38,935 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2021 | Calculated=77.80% | Source=4252.00% | Difference=4174.20%
+2026-07-28 19:04:38,936 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2022 | Calculated=79.08% | Source=4553.00% | Difference=4473.92%
+2026-07-28 19:04:38,936 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2023 | Calculated=77.91% | Source=5027.00% | Difference=4949.09%
+2026-07-28 19:04:38,937 | WARNING | OPM mismatch | Company=Cipla Ltd
+ | Year=Mar 2024 | Calculated=75.59% | Source=6291.00% | Difference=6215.41%
+2026-07-28 19:04:38,937 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2013 | Calculated=73.52% | Source=18087.00% | Difference=18013.48%
+2026-07-28 19:04:38,937 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2014 | Calculated=74.84% | Source=17766.00% | Difference=17691.16%
+2026-07-28 19:04:38,938 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2015 | Calculated=76.60% | Source=17343.00% | Difference=17266.40%
+2026-07-28 19:04:38,938 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2016 | Calculated=75.96% | Source=18714.00% | Difference=18638.04%
+2026-07-28 19:04:38,939 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2017 | Calculated=84.07% | Source=12448.00% | Difference=12363.93%
+2026-07-28 19:04:38,939 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2018 | Calculated=89.10% | Source=9288.00% | Difference=9198.90%
+2026-07-28 19:04:38,940 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2019 | Calculated=74.89% | Source=25007.00% | Difference=24932.11%
+2026-07-28 19:04:38,940 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2020 | Calculated=77.54% | Source=21581.00% | Difference=21503.46%
+2026-07-28 19:04:38,941 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2021 | Calculated=79.31% | Source=18628.00% | Difference=18548.69%
+2026-07-28 19:04:38,941 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2022 | Calculated=77.47% | Source=24721.00% | Difference=24643.53%
+2026-07-28 19:04:38,941 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2023 | Calculated=68.01% | Source=44232.00% | Difference=44163.99%
+2026-07-28 19:04:38,942 | WARNING | OPM mismatch | Company=Coal India Ltd | Year=Mar 2024 | Calculated=66.29% | Source=47971.00% | Difference=47904.71%
+2026-07-28 19:04:38,993 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2013 | Calculated=35.22% | Source=3534.00% | Difference=3498.78%
+2026-07-28 19:04:38,993 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,993 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2014 | Calculated=31.74% | Source=5602.00% | Difference=5570.26%
+2026-07-28 19:04:38,993 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,994 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2015 | Calculated=31.90% | Source=7214.00% | Difference=7182.10%
+2026-07-28 19:04:38,994 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,994 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2016 | Calculated=31.75% | Source=9037.00% | Difference=9005.25%
+2026-07-28 19:04:38,994 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,995 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2017 | Calculated=32.56% | Source=11374.00% | Difference=11341.44%
+2026-07-28 19:04:38,995 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,995 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2018 | Calculated=34.63% | Source=13374.00% | Difference=13339.37%
+2026-07-28 19:04:38,995 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,995 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2019 | Calculated=33.15% | Source=16592.00% | Difference=16558.85%
+2026-07-28 19:04:38,996 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,996 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2020 | Calculated=37.20% | Source=14593.00% | Difference=14555.80%
+2026-07-28 19:04:38,996 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,996 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2021 | Calculated=40.81% | Source=16848.00% | Difference=16807.19%
+2026-07-28 19:04:38,996 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,997 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2022 | Calculated=41.61% | Source=20795.00% | Difference=20753.39%
+2026-07-28 19:04:38,997 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,997 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2023 | Calculated=36.92% | Source=29932.00% | Difference=29895.08%
+2026-07-28 19:04:38,997 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,998 | WARNING | OPM mismatch | Company=HDFC Bank Ltd | Year=Mar 2024 | Calculated=61.41% | Source=-44685.00% | Difference=44746.41%
+2026-07-28 19:04:38,998 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,998 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2013 | Calculated=96.27% | Source=525.00% | Difference=428.73%
+2026-07-28 19:04:38,998 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,999 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2014 | Calculated=96.48% | Source=605.00% | Difference=508.52%
+2026-07-28 19:04:38,999 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:38,999 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2015 | Calculated=96.79% | Source=874.00% | Difference=777.21%
+2026-07-28 19:04:38,999 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,000 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2016 | Calculated=94.74% | Source=953.00% | Difference=858.26%
+2026-07-28 19:04:39,000 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,000 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2017 | Calculated=96.83% | Source=972.00% | Difference=875.17%
+2026-07-28 19:04:39,000 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,001 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2018 | Calculated=96.67% | Source=1074.00% | Difference=977.33%
+2026-07-28 19:04:39,001 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,001 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2019 | Calculated=96.87% | Source=1215.00% | Difference=1118.13%
+2026-07-28 19:04:39,001 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,001 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2020 | Calculated=96.12% | Source=1141.00% | Difference=1044.88%
+2026-07-28 19:04:39,001 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,002 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2021 | Calculated=98.27% | Source=1235.00% | Difference=1136.73%
+2026-07-28 19:04:39,002 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,002 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2022 | Calculated=98.84% | Source=778.00% | Difference=679.16%
+2026-07-28 19:04:39,002 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,003 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2023 | Calculated=99.89% | Source=80.00% | Difference=19.89%
+2026-07-28 19:04:39,003 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,003 | WARNING | OPM mismatch | Company=HDFC Life Insurance Company Ltd | Year=Mar 2024 | Calculated=99.48% | Source=531.00% | Difference=431.52%
+2026-07-28 19:04:39,003 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,004 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2014 | Calculated=85.94% | Source=3553.00% | Difference=3467.06%
+2026-07-28 19:04:39,004 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2015 | Calculated=87.22% | Source=3520.00% | Difference=3432.78%
+2026-07-28 19:04:39,004 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2016 | Calculated=84.45% | Source=4424.00% | Difference=4339.55%
+2026-07-28 19:04:39,005 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2017 | Calculated=83.97% | Source=4585.00% | Difference=4501.03%
+2026-07-28 19:04:39,005 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2018 | Calculated=83.57% | Source=5334.00% | Difference=5250.43%
+2026-07-28 19:04:39,006 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2019 | Calculated=85.21% | Source=5025.00% | Difference=4939.79%
+2026-07-28 19:04:39,006 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2020 | Calculated=86.09% | Source=4070.00% | Difference=3983.91%
+2026-07-28 19:04:39,006 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2021 | Calculated=86.90% | Source=4058.00% | Difference=3971.10%
+2026-07-28 19:04:39,007 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2022 | Calculated=88.98% | Source=3256.00% | Difference=3167.02%
+2026-07-28 19:04:39,007 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2023 | Calculated=88.00% | Source=4099.00% | Difference=4011.00%
+2026-07-28 19:04:39,008 | WARNING | OPM mismatch | Company=Hero MotoCorp Ltd
+ | Year=Mar 2024 | Calculated=86.15% | Source=5235.00% | Difference=5148.85%
+2026-07-28 19:04:39,008 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2013 | Calculated=90.40% | Source=7699.00% | Difference=7608.60%
+2026-07-28 19:04:39,008 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2014 | Calculated=90.85% | Source=8024.00% | Difference=7933.15%
+2026-07-28 19:04:39,009 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2015 | Calculated=91.52% | Source=8844.00% | Difference=8752.48%
+2026-07-28 19:04:39,009 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2016 | Calculated=92.12% | Source=7778.00% | Difference=7685.88%
+2026-07-28 19:04:39,010 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2017 | Calculated=87.71% | Source=12317.00% | Difference=12229.29%
+2026-07-28 19:04:39,010 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2018 | Calculated=88.11% | Source=13695.00% | Difference=13606.89%
+2026-07-28 19:04:39,011 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2019 | Calculated=88.12% | Source=15511.00% | Difference=15422.88%
+2026-07-28 19:04:39,011 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2020 | Calculated=87.89% | Source=14306.00% | Difference=14218.11%
+2026-07-28 19:04:39,011 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2021 | Calculated=86.70% | Source=17559.00% | Difference=17472.30%
+2026-07-28 19:04:39,012 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2022 | Calculated=85.47% | Source=28347.00% | Difference=28261.53%
+2026-07-28 19:04:39,012 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2023 | Calculated=89.85% | Source=22666.00% | Difference=22576.15%
+2026-07-28 19:04:39,013 | WARNING | OPM mismatch | Company=Hindalco Industries Ltd | Year=Mar 2024 | Calculated=88.95% | Source=23872.00% | Difference=23783.05%
+2026-07-28 19:04:39,013 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2013 | Calculated=84.37% | Source=4220.00% | Difference=4135.63%
+2026-07-28 19:04:39,014 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2014 | Calculated=83.72% | Source=4759.00% | Difference=4675.28%
+2026-07-28 19:04:39,014 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2015 | Calculated=83.07% | Source=5412.00% | Difference=5328.93%
+2026-07-28 19:04:39,014 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2016 | Calculated=81.64% | Source=5910.00% | Difference=5828.36%
+2026-07-28 19:04:39,015 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2017 | Calculated=80.92% | Source=6328.00% | Difference=6247.08%
+2026-07-28 19:04:39,015 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2018 | Calculated=78.90% | Source=7499.00% | Difference=7420.10%
+2026-07-28 19:04:39,016 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2019 | Calculated=77.41% | Source=8880.00% | Difference=8802.59%
+2026-07-28 19:04:39,016 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2020 | Calculated=75.21% | Source=9861.00% | Difference=9785.79%
+2026-07-28 19:04:39,016 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2021 | Calculated=75.28% | Source=11626.00% | Difference=11550.72%
+2026-07-28 19:04:39,017 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2022 | Calculated=75.49% | Source=12857.00% | Difference=12781.51%
+2026-07-28 19:04:39,017 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2023 | Calculated=76.65% | Source=14147.00% | Difference=14070.35%
+2026-07-28 19:04:39,018 | WARNING | OPM mismatch | Company=Hindustan Unilever Ltd
+ | Year=Mar 2024 | Calculated=76.32% | Source=14659.00% | Difference=14582.68%
+2026-07-28 19:04:39,018 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2013 | Calculated=70.59% | Source=-15085.00% | Difference=15155.59%
+2026-07-28 19:04:39,018 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,019 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2014 | Calculated=66.40% | Source=-13084.00% | Difference=13150.40%
+2026-07-28 19:04:39,019 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,019 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2015 | Calculated=70.53% | Source=-16120.00% | Difference=16190.53%
+2026-07-28 19:04:39,019 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,019 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2016 | Calculated=88.12% | Source=-26955.00% | Difference=27043.12%
+2026-07-28 19:04:39,020 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,020 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2017 | Calculated=104.76% | Source=-37737.00% | Difference=37841.76%
+2026-07-28 19:04:39,020 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,020 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2018 | Calculated=117.12% | Source=-44906.00% | Difference=45023.12%
+2026-07-28 19:04:39,020 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,021 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2019 | Calculated=116.38% | Source=-50971.00% | Difference=51087.38%
+2026-07-28 19:04:39,021 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,021 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2020 | Calculated=100.62% | Source=-45190.00% | Difference=45290.62%
+2026-07-28 19:04:39,021 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,021 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2021 | Calculated=102.41% | Source=-44805.00% | Difference=44907.41%
+2026-07-28 19:04:39,021 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,022 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2022 | Calculated=84.69% | Source=-26558.00% | Difference=26642.69%
+2026-07-28 19:04:39,022 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,022 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2023 | Calculated=72.57% | Source=-17341.00% | Difference=17413.57%
+2026-07-28 19:04:39,023 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,023 | WARNING | OPM mismatch | Company=ICICI Bank Ltd | Year=Mar 2024 | Calculated=62.41% | Source=-14152.00% | Difference=14214.41%
+2026-07-28 19:04:39,023 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,023 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2013 | Calculated=104.46% | Source=-178.00% | Difference=282.46%
+2026-07-28 19:04:39,024 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,024 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2014 | Calculated=105.19% | Source=-225.00% | Difference=330.19%
+2026-07-28 19:04:39,024 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,024 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2015 | Calculated=105.24% | Source=-221.00% | Difference=326.24%
+2026-07-28 19:04:39,024 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,025 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2016 | Calculated=87.34% | Source=764.00% | Difference=676.66%
+2026-07-28 19:04:39,025 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,025 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2017 | Calculated=87.78% | Source=919.00% | Difference=831.22%
+2026-07-28 19:04:39,025 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,026 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2018 | Calculated=103.79% | Source=-262.00% | Difference=365.79%
+2026-07-28 19:04:39,026 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,026 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2019 | Calculated=85.05% | Source=1669.00% | Difference=1583.95%
+2026-07-28 19:04:39,026 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,026 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2020 | Calculated=84.61% | Source=1772.00% | Difference=1687.39%
+2026-07-28 19:04:39,026 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,027 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2021 | Calculated=82.97% | Source=2072.00% | Difference=1989.03%
+2026-07-28 19:04:39,027 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,027 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2022 | Calculated=93.66% | Source=1016.00% | Difference=922.34%
+2026-07-28 19:04:39,027 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,028 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2023 | Calculated=92.93% | Source=1264.00% | Difference=1171.07%
+2026-07-28 19:04:39,028 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,028 | WARNING | OPM mismatch | Company=ICICI Lombard General Insurance Company Ltd | Year=Mar 2024 | Calculated=87.42% | Source=2577.00% | Difference=2489.58%
+2026-07-28 19:04:39,028 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,028 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2013 | Calculated=96.28% | Source=745.00% | Difference=648.72%
+2026-07-28 19:04:39,029 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,029 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2014 | Calculated=93.13% | Source=1504.00% | Difference=1410.87%
+2026-07-28 19:04:39,029 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,029 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2015 | Calculated=95.20% | Source=1655.00% | Difference=1559.80%
+2026-07-28 19:04:39,030 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,030 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2016 | Calculated=91.17% | Source=1842.00% | Difference=1750.83%
+2026-07-28 19:04:39,030 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,030 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2017 | Calculated=95.22% | Source=1806.00% | Difference=1710.78%
+2026-07-28 19:04:39,030 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,031 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2018 | Calculated=95.44% | Source=1771.00% | Difference=1675.56%
+2026-07-28 19:04:39,031 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,031 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2019 | Calculated=98.70% | Source=541.00% | Difference=442.30%
+2026-07-28 19:04:39,031 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,032 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2020 | Calculated=101.52% | Source=-319.00% | Difference=420.52%
+2026-07-28 19:04:39,032 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,032 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2021 | Calculated=100.47% | Source=-390.00% | Difference=490.47%
+2026-07-28 19:04:39,032 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,033 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2022 | Calculated=103.40% | Source=-2163.00% | Difference=2266.40%
+2026-07-28 19:04:39,033 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,033 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2023 | Calculated=103.48% | Source=-1757.00% | Difference=1860.48%
+2026-07-28 19:04:39,033 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,034 | WARNING | OPM mismatch | Company=ICICI Prudential Life Insurance Company Ltd | Year=Mar 2024 | Calculated=102.03% | Source=-1829.00% | Difference=1931.03%
+2026-07-28 19:04:39,034 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,034 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2013 | Calculated=90.71% | Source=855.00% | Difference=764.29%
+2026-07-28 19:04:39,034 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2014 | Calculated=96.11% | Source=433.00% | Difference=336.89%
+2026-07-28 19:04:39,035 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2015 | Calculated=86.33% | Source=1904.00% | Difference=1817.67%
+2026-07-28 19:04:39,035 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2016 | Calculated=80.40% | Source=3164.00% | Difference=3083.60%
+2026-07-28 19:04:39,036 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2017 | Calculated=88.06% | Source=2219.00% | Difference=2130.94%
+2026-07-28 19:04:39,036 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2018 | Calculated=86.84% | Source=3030.00% | Difference=2943.16%
+2026-07-28 19:04:39,037 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2019 | Calculated=100.53% | Source=-151.00% | Difference=251.53%
+2026-07-28 19:04:39,037 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2020 | Calculated=88.62% | Source=4069.00% | Difference=3980.38%
+2026-07-28 19:04:39,038 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2021 | Calculated=99.98% | Source=2.00% | Difference=97.98%
+2026-07-28 19:04:39,038 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2022 | Calculated=97.85% | Source=558.00% | Difference=460.15%
+2026-07-28 19:04:39,038 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2023 | Calculated=88.02% | Source=6521.00% | Difference=6432.98%
+2026-07-28 19:04:39,039 | WARNING | OPM mismatch | Company=Interglobe Aviation Ltd | Year=Mar 2024 | Calculated=76.30% | Source=16331.00% | Difference=16254.70%
+2026-07-28 19:04:39,039 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2013 | Calculated=27.88% | Source=286.00% | Difference=258.12%
+2026-07-28 19:04:39,039 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,040 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2014 | Calculated=30.95% | Source=335.00% | Difference=304.05%
+2026-07-28 19:04:39,040 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,040 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2015 | Calculated=32.33% | Source=288.00% | Difference=255.67%
+2026-07-28 19:04:39,040 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,040 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2016 | Calculated=35.28% | Source=329.00% | Difference=293.72%
+2026-07-28 19:04:39,040 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,041 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2017 | Calculated=39.46% | Source=379.00% | Difference=339.54%
+2026-07-28 19:04:39,041 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,041 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2018 | Calculated=37.93% | Source=942.00% | Difference=904.07%
+2026-07-28 19:04:39,041 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,042 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2019 | Calculated=41.70% | Source=-437.00% | Difference=478.70%
+2026-07-28 19:04:39,042 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,042 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2020 | Calculated=43.81% | Source=-553.00% | Difference=596.81%
+2026-07-28 19:04:39,042 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,043 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2021 | Calculated=55.16% | Source=-2469.00% | Difference=2524.16%
+2026-07-28 19:04:39,043 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,043 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2022 | Calculated=51.39% | Source=-839.00% | Difference=890.39%
+2026-07-28 19:04:39,043 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,044 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2023 | Calculated=42.69% | Source=2067.00% | Difference=2024.31%
+2026-07-28 19:04:39,044 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,044 | WARNING | OPM mismatch | Company=IndusInd Bank Ltd | Year=Mar 2024 | Calculated=38.55% | Source=2978.00% | Difference=2939.45%
+2026-07-28 19:04:39,044 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,057 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,057 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,058 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,058 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,058 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,059 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,059 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,060 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,060 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,060 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,061 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,061 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,070 | WARNING | OPM mismatch | Company=Jio Financial Services Ltd | Year=Mar 2023 | Calculated=86.67% | Source=88.00% | Difference=1.33%
+2026-07-28 19:04:39,070 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,071 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,080 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2013 | Calculated=60.92% | Source=-1789.00% | Difference=1849.92%
+2026-07-28 19:04:39,080 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,081 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2014 | Calculated=58.84% | Source=-1379.00% | Difference=1437.84%
+2026-07-28 19:04:39,081 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,081 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2015 | Calculated=72.96% | Source=-3366.00% | Difference=3438.96%
+2026-07-28 19:04:39,081 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,082 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2016 | Calculated=56.57% | Source=-2263.00% | Difference=2319.57%
+2026-07-28 19:04:39,082 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,082 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2017 | Calculated=66.44% | Source=-3965.00% | Difference=4031.44%
+2026-07-28 19:04:39,082 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,083 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2018 | Calculated=66.87% | Source=-4141.00% | Difference=4207.87%
+2026-07-28 19:04:39,083 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,083 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2019 | Calculated=66.23% | Source=-5114.00% | Difference=5180.23%
+2026-07-28 19:04:39,083 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,084 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2020 | Calculated=67.45% | Source=-5005.00% | Difference=5072.45%
+2026-07-28 19:04:39,084 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,084 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2021 | Calculated=90.83% | Source=-9958.00% | Difference=10048.83%
+2026-07-28 19:04:39,084 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,085 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2022 | Calculated=90.98% | Source=-8512.00% | Difference=8602.98%
+2026-07-28 19:04:39,085 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,085 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2023 | Calculated=79.44% | Source=-5746.00% | Difference=5825.44%
+2026-07-28 19:04:39,085 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,085 | WARNING | OPM mismatch | Company=Kotak Mahindra Bank Ltd
+ | Year=Mar 2024 | Calculated=83.67% | Source=-13382.00% | Difference=13465.67%
+2026-07-28 19:04:39,085 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,086 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,086 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,087 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,087 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,087 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,088 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,136 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,136 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,137 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,137 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,138 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,138 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,139 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,139 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,139 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,140 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,140 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,141 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,145 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,146 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,146 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,147 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,147 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,148 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,148 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,148 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,149 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,149 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,150 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,150 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,155 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,155 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,156 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,156 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,157 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,157 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,158 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,158 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,159 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,159 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,159 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,160 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,165 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,165 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,166 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,166 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,167 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,167 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,167 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,168 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,168 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,169 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,169 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,170 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,174 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,175 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,175 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,176 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,176 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,176 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,177 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,177 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,178 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,178 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,178 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,179 | INFO | Financial sector company detected. ROCE benchmark skipped.
+2026-07-28 19:04:39,188 | WARNING | OPM mismatch | Company=Sun Pharmaceuticals Industries Ltd | Year=Mar 2024 | Calculated=26.84% | Source=28.00% | Difference=1.16%
